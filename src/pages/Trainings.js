@@ -51,13 +51,13 @@ const Trainings = () => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     const fetchDataAsync = async () => {
       setLoading(true);
       try {
         const page = await getPage('trening');
         setData(page);
-        console.log(page);
       } catch (error) {
         setError(error);
       } finally {
