@@ -5,8 +5,8 @@
     }
   },
   "root": true,
-  "extends": ["airbnb", "prettier"],
-  "plugins": ["html", "prettier", "react-hooks", "@babel"],
+  "extends": ["airbnb", "prettier", "plugin:jsx-a11y/recommended"],
+  "plugins": ["html", "prettier", "react-hooks", "jsx-a11y", "@babel"],
   "rules": {
     "import/no-extraneous-dependencies": [
       "error",
@@ -99,7 +99,8 @@
       {
         "trailingComma": "es5",
         "singleQuote": true,
-        "printWidth": 80
+        "printWidth": 80,
+        "endOfLine": "auto"
       }
     ],
     "jsx-a11y/href-no-hash": "off",

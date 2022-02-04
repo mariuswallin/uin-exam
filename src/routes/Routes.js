@@ -10,11 +10,11 @@ import Home from '../pages/Home';
 import Trainings from '../pages/Trainings';
 import TrainingsRefactored from '../pages/TrainingsRefactored';
 
-const Routes = () => (
+const SatsRoutes = () => (
   <Router>
     <Navigation />
     <DefaultLayout>
-      <Switch>
+      <Routes>
         <Route exact path="/">
           <Home />
         </Route>
@@ -36,9 +36,9 @@ const Routes = () => (
         {/* <Route exact path="/gruppetrening/:slug">
           <GroupClass />
         </Route> */}
-      </Switch>
+      </Routes>
     </DefaultLayout>
   </Router>
 );
 
-export default Routes;
+export default SatsRoutes;
